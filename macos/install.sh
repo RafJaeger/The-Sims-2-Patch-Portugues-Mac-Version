@@ -4,7 +4,7 @@ set -eu
 
 SCRIPT_DIRECTORY="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 SOURCE_APP="$SCRIPT_DIRECTORY/Patch Portuguese.app"
-DESTINATION="${PATCH_PORTUGUESE_DEST:-$HOME/Applications/Patch Portuguese.app}"
+DESTINATION="${PATCH_PORTUGUESE_DEST:-$HOME/Desktop/Patch Portuguese - The Sims 2.app}"
 
 if [ ! -d "$SOURCE_APP" ]; then
     echo "Erro: o pacote Patch Portuguese.app não foi encontrado." >&2

@@ -3,15 +3,17 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleDisplayName</key>
-    <string>Patch Portuguese</string>
+    <string>Patch Portuguese - The Sims 2</string>
     <key>CFBundleExecutable</key>
     <string>Patch-Portuguese</string>
     <key>CFBundleIdentifier</key>
     <string>org.patchportuguese.sims2</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
+    <key>CFBundleIconFile</key>
+    <string>Sims2.icns</string>
     <key>CFBundleName</key>
-    <string>Patch Portuguese</string>
+    <string>Patch Portuguese - The Sims 2</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleSignature</key>

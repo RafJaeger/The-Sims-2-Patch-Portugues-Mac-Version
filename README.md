@@ -17,7 +17,7 @@ Captura do menu do The Sims 2 funcionando em português:
 
 ## O que este projeto faz
 
-- instala um aplicativo separado chamado **Patch Portuguese**;
+- instala um aplicativo separado chamado **Patch Portuguese - The Sims 2**;
 - abre o `The Sims 2.app` com o argumento `-l:Portuguese`;
 - Voce tambem pode fazer isso manualmente pelo terminal com o codigo sem instalar o app : (open "/Applications/The Sims 2.localized/The Sims 2.app" --args "-l:Portuguese")
 - mantém o jogo original intacto;
@@ -54,13 +54,13 @@ sh macos/install.sh
 Por padrão, ele instala somente o iniciador em:
 
 ```text
-~/Applications/Patch Portuguese.app
+~/Desktop/Patch Portuguese - The Sims 2.app
 ```
 
 Depois, abra essa aplicação pelo Finder ou execute:
 
 ```sh
-open "$HOME/Applications/Patch Portuguese.app"
+open "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
 ```
 
 ### 4. Se o jogo estiver em outro local
@@ -70,14 +70,14 @@ caminho exato sem editar nenhum arquivo:
 
 ```sh
 PATCH_PORTUGUESE_GAME_PATH="/caminho/The Sims 2.app" \
-  open "$HOME/Applications/Patch Portuguese.app"
+  open "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
 ```
 
 Exemplo para a instalação padrão usada nos testes:
 
 ```sh
 PATCH_PORTUGUESE_GAME_PATH="/Applications/The Sims 2.localized/The Sims 2.app" \
-  open "$HOME/Applications/Patch Portuguese.app"
+  open "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
 ```
 
 ## Instalação em `/Applications`
@@ -85,7 +85,7 @@ PATCH_PORTUGUESE_GAME_PATH="/Applications/The Sims 2.localized/The Sims 2.app" \
 Se o usuário preferir deixar o iniciador junto dos outros aplicativos:
 
 ```sh
-PATCH_PORTUGUESE_DEST="/Applications/Patch Portuguese.app" \
+PATCH_PORTUGUESE_DEST="/Applications/Patch Portuguese - The Sims 2.app" \
   sh macos/install.sh
 ```
 
@@ -94,13 +94,13 @@ PATCH_PORTUGUESE_DEST="/Applications/Patch Portuguese.app" \
 Apague apenas o iniciador instalado. O jogo original não é modificado:
 
 ```sh
-rm -rf "$HOME/Applications/Patch Portuguese.app"
+rm -rf "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
 ```
 
 Se ele foi instalado em `/Applications`, use o Finder ou remova somente:
 
 ```text
-/Applications/Patch Portuguese.app
+/Applications/Patch Portuguese - The Sims 2.app
 ```
 
 ## Observações
