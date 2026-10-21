@@ -9,6 +9,12 @@ sem alterar arquivos do sistema e sem incluir arquivos do jogo.
 > 10.7. O comportamento pode variar conforme a edição do jogo e os recursos de
 > idioma instalados.
 
+## Demonstração
+
+Captura do menu do The Sims 2 funcionando em português:
+
+![The Sims 2 em português](docs/images/the-sims-2-portuguese-menu.png)
+
 ## O que este projeto faz
 
 - instala um aplicativo separado chamado **Patch Portuguese**;
