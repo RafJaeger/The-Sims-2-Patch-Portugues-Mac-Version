@@ -1,4 +1,4 @@
-# Patch Portuguese — The Sims 2 Complete Mac
+# Patch Portuguese — Para The sims 2 (versao MAC OS X)
 
 Iniciador compartilhável para a versão Mac do **The Sims 2 completo**, incluindo
 as expansões instaladas no mesmo conjunto. O iniciador pede ao aplicativo do
@@ -13,9 +13,9 @@ sem alterar arquivos do sistema e sem incluir arquivos do jogo.
 
 - instala um aplicativo separado chamado **Patch Portuguese**;
 - abre o `The Sims 2.app` com o argumento `-l:Portuguese`;
+- Voce tambem pode fazer isso manualmente pelo terminal com o codigo sem instalar o app : (open "/Applications/The Sims 2.localized/The Sims 2.app" --args "-l:Portuguese")
 - mantém o jogo original intacto;
 - funciona com instalações que já contenham os recursos de idioma em português;
-- não fornece jogo, expansão, crack, No-CD, ROM ou imagem de disco.
 
 O parâmetro foi testado na instalação usada no desenvolvimento. Se a instalação
 de outra pessoa não tiver os recursos portugueses, o iniciador não consegue
@@ -25,7 +25,7 @@ criar a tradução sozinho e o jogo pode continuar em inglês.
 
 ### 1. Requisitos
 
-- The Sims 2 para Mac instalado legalmente;
+- The Sims 2 para Mac instalado;
 - expansões e Stuff Packs instalados, caso desejados;
 - Mac OS X 10.7 ou posterior;
 - acesso ao Terminal apenas para a instalação inicial.
@@ -35,8 +35,8 @@ criar a tradução sozinho e o jogo pode continuar em inglês.
 No Terminal:
 
 ```sh
-git clone https://github.com/RafJaeger/Patch-Portuguese.git
-cd Patch-Portuguese
+git clone https://github.com/RafJaeger/The-Sims-2-Patch-Portugues-Mac-Version.git
+cd The-Sims-2-Patch-Portugues-Mac-Version
 ```
 
 ### 3. Instalar o iniciador
