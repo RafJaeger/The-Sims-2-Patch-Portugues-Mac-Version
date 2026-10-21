@@ -3,11 +3,11 @@
 set -eu
 
 SCRIPT_DIRECTORY="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
-SOURCE_APP="$SCRIPT_DIRECTORY/Patch Portuguese.app"
-DESTINATION="${PATCH_PORTUGUESE_DEST:-$HOME/Desktop/Patch Portuguese - The Sims 2.app}"
+SOURCE_APP="$SCRIPT_DIRECTORY/../The Sims 2 PT.app"
+DESTINATION="${PATCH_PORTUGUESE_DEST:-$HOME/Desktop/The Sims 2 PT.app}"
 
 if [ ! -d "$SOURCE_APP" ]; then
-    echo "Erro: o pacote Patch Portuguese.app não foi encontrado." >&2
+    echo "Erro: o pacote The Sims 2 PT.app não foi encontrado." >&2
     exit 1
 fi
 
@@ -19,6 +19,6 @@ fi
 
 /bin/mkdir -p "$(dirname "$DESTINATION")"
 /usr/bin/ditto --rsrc "$SOURCE_APP" "$DESTINATION"
-/bin/chmod 755 "$DESTINATION/Contents/MacOS/Patch-Portuguese"
+/bin/chmod 755 "$DESTINATION/Contents/MacOS/applet"
 
 echo "Instalado em: $DESTINATION"

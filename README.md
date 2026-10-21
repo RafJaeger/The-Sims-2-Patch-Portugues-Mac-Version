@@ -1,111 +1,79 @@
-# Patch Portuguese — Para The sims 2 (versao MAC OS X)
+# The Sims 2 PT — Mac OS X
 
-Iniciador compartilhável para a versão Mac do **The Sims 2 completo**, incluindo
-as expansões instaladas no mesmo conjunto. O iniciador pede ao aplicativo do
-jogo para carregar o idioma `Portuguese` sem substituir o aplicativo original,
-sem alterar arquivos do sistema e sem incluir arquivos do jogo.
+Iniciador para abrir o **The Sims 2 completo** em português no Mac OS X. O
+iniciador é um aplicativo separado, não substitui o jogo original e não altera
+arquivos do sistema.
 
 > Compatibilidade validada experimentalmente em um MacBook2,1 com Mac OS X Lion
-> 10.7. O comportamento pode variar conforme a edição do jogo e os recursos de
-> idioma instalados.
+> 10.7. O resultado depende dos recursos de idioma presentes na instalação do
+> jogo.
 
-## Demonstração
+## Como usar
 
-Captura do menu do The Sims 2 funcionando em português:
+1. Baixe este repositório pelo botão **Code > Download ZIP**.
+2. Extraia o ZIP.
+3. Dentro da pasta extraída, localize **The Sims 2 PT.app** e arraste-o para a
+   Mesa ou para Aplicativos.
+4. Dê dois cliques no aplicativo.
 
-![The Sims 2 em português](docs/images/the-sims-2-portuguese-menu.png)
+O iniciador procura o jogo nos locais mais comuns. Se não encontrar, abre uma
+janela para você selecionar o **The Sims 2.app**. Essa escolha fica salva para
+as próximas execuções.
 
-## O que este projeto faz
+O aplicativo pode ficar em qualquer lugar. O jogo pode estar em outro local,
+desde que seja selecionado na primeira execução.
 
-- instala um aplicativo separado chamado **Patch Portuguese - The Sims 2**;
+## O que ele faz
+
 - abre o `The Sims 2.app` com o argumento `-l:Portuguese`;
-- Voce tambem pode fazer isso manualmente pelo terminal com o codigo sem instalar o app : (open "/Applications/The Sims 2.localized/The Sims 2.app" --args "-l:Portuguese")
 - mantém o jogo original intacto;
-- funciona com instalações que já contenham os recursos de idioma em português;
+- não instala arquivos no sistema;
+- não inclui arquivos do jogo;
+- funciona com instalações que já contenham os recursos de idioma em português.
 
-O parâmetro foi testado na instalação usada no desenvolvimento. Se a instalação
-de outra pessoa não tiver os recursos portugueses, o iniciador não consegue
+Se a instalação não tiver os recursos portugueses, o iniciador não consegue
 criar a tradução sozinho e o jogo pode continuar em inglês.
 
-## Instalação no Mac
+O iniciador também não remove a exigência de mídia do jogo. Se o The Sims 2
+pedir o disco, é necessário inserir a mídia correspondente ou usar uma
+instalação que já funcione sem essa exigência; o iniciador não modifica o
+executável original.
 
-### 1. Requisitos
+## Uso manual pelo Terminal
 
-- The Sims 2 para Mac instalado;
-- expansões e Stuff Packs instalados, caso desejados;
-- Mac OS X 10.7 ou posterior;
-- acesso ao Terminal apenas para a instalação inicial.
-
-### 2. Baixar o projeto
-
-No Terminal:
+Quem preferir iniciar manualmente pode usar:
 
 ```sh
-git clone https://github.com/RafJaeger/The-Sims-2-Patch-Portugues-Mac-Version.git
-cd The-Sims-2-Patch-Portugues-Mac-Version
+open "/Applications/The Sims 2.localized/The Sims 2.app" --args "-l:Portuguese"
 ```
 
-### 3. Instalar o iniciador
+Para outra localização, substitua o caminho pelo local correto do jogo.
+
+## Instalação opcional pelo Terminal
+
+O repositório também mantém um instalador para copiar somente o aplicativo
+para a Mesa:
 
 ```sh
 sh macos/install.sh
 ```
 
-Por padrão, ele instala somente o iniciador em:
+Por padrão, o destino é:
 
 ```text
-~/Desktop/Patch Portuguese - The Sims 2.app
-```
-
-Depois, abra essa aplicação pelo Finder ou execute:
-
-```sh
-open "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
-```
-
-### 4. Se o jogo estiver em outro local
-
-O iniciador procura automaticamente nos locais mais comuns. Para indicar o
-caminho exato sem editar nenhum arquivo:
-
-```sh
-PATCH_PORTUGUESE_GAME_PATH="/caminho/The Sims 2.app" \
-  open "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
-```
-
-Exemplo para a instalação padrão usada nos testes:
-
-```sh
-PATCH_PORTUGUESE_GAME_PATH="/Applications/The Sims 2.localized/The Sims 2.app" \
-  open "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
-```
-
-## Instalação em `/Applications`
-
-Se o usuário preferir deixar o iniciador junto dos outros aplicativos:
-
-```sh
-PATCH_PORTUGUESE_DEST="/Applications/Patch Portuguese - The Sims 2.app" \
-  sh macos/install.sh
+~/Desktop/The Sims 2 PT.app
 ```
 
 ## Como desfazer
 
-Apague apenas o iniciador instalado. O jogo original não é modificado:
+Apague apenas **The Sims 2 PT.app**. O jogo original não é modificado.
 
-```sh
-rm -rf "$HOME/Desktop/Patch Portuguese - The Sims 2.app"
-```
+## Demonstração
 
-Se ele foi instalado em `/Applications`, use o Finder ou remova somente:
-
-```text
-/Applications/Patch Portuguese - The Sims 2.app
-```
+![The Sims 2 em português](docs/images/the-sims-2-portuguese-menu.png)
 
 ## Observações
 
-Este repositório contém apenas código de inicialização e documentação. Cada
-usuário deve fornecer sua própria cópia do jogo e seus próprios recursos de
-idioma. O projeto não promete compatibilidade universal com todas as edições,
-instaladores ou expansões.
+Este projeto contém apenas o iniciador e a documentação. Cada usuário deve
+fornecer sua própria cópia do jogo e seus próprios recursos de idioma. O projeto
+não promete compatibilidade universal com todas as edições ou expansões.
